@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+#content {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 5fr;
+    grid-template-rows: 100px 1fr 100px;
+    height: 100vh;
+}
+
+header {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+nav {
+    grid-column: span 1;
+    grid-row: 2/3;
+}
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+footer {
+    grid-column: span 2;
+    grid-row: 3/4;
+}

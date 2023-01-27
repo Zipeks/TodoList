@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-color: grey;
 }
 #content {
     display: grid;
@@ -15,6 +16,14 @@ header {
 nav {
     grid-column: span 1;
     grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+nav form {
+    display: flex;
+}
+nav button {
+    width: 100px;
 }
 main {
     grid-column: 2/3;
